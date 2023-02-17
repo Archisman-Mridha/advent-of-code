@@ -115,6 +115,32 @@ object PartOne {
     }
 }
 
+object PartTwo {
+
+    fun evaluateLiteralOrParanthesizedExpression(tokens: List<Token>): Pair<Int, List<Token>> {
+        when(tokens.first( ).type) {
+    
+            TokenTypes.Number -> TODO( )
+
+            TokenTypes.OpenParanthesis -> TODO( )
+
+            else -> throw Exception("exception occured at `evaluateLiteralOrParanthesizedExpression( )`")
+        }
+
+        TODO( )
+    }
+
+    fun EvaluateAdditions( ) { }
+
+    fun EvaluateMultiplications( ) { }
+
+    fun evaluateLine(line: String): Int {
+        val tokens= line.parse( )
+
+        TODO( )
+    }
+}
+
 fun main( ) {
 
     val inputFile= File("src/main/resources", "inputs.txt")
@@ -124,6 +150,7 @@ fun main( ) {
 
     inputFile.forEachLine( ) {
         println("Part 1 : ${it}= ${PartOne.evaluateLine(it)}")
+        println("Part 2 : ${it}= ${PartTwo.evaluateLine(it)}")
     }
 
 }
